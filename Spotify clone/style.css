@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+    ;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+
+
+
+.left {
+    width: 35vw;
+    height: 75vh;
+    background-color: #121212;
+    margin: 3px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    padding: 10px;
+    /* padding-right: 0px; */
+
+}
+
+
+#right {
+    width: 65vw;
+    height: 75vh;
+    background-color: #1f1f1f;
+    margin: 3px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-right: 10px;
+    /* transition: all 5s ease-out; */
+}
+
+#right::-webkit-scrollbar{
+    color: #1f1f1f;
+}
+
+#updated-right{
+    width: 65vw;
+    height: 75vh;
+    background-color: #424141;
+    margin: 3px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+
+#updated-right p {
+    color: red;
+}
+#updated-right  h2{
+    color: red;
+}
+
+#updated-right::-webkit-scrollbar{
+    color: #1f1f1f;
+}
+
+
+
+.navbar {
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    padding: 19px 25px;
+    height: 3vh;
+
+
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.search {
+    font-size: 16px;
+    font-weight: 500;
+    background-image: url(search.svg);
+    /* filter: invert(1); */
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 23px;
+    padding-left: 35px;
+    width: 32vw;
+    height: 7vh;
+    border-radius: 25px;
+    border: none;
+    background-color: #1f1f1f;
+    /* cursor: pointer; */
+}
+
+.search:hover {
+    background-color: #323131;
+}
+
+.home {
+    background-image: url(home.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    /* filter: invert(1); */
+    cursor: pointer;
+    background-position: center;
+    width: 40px;
+    height: 6vh;
+    border-radius: 25px;
+    border: none;
+    background-color: #1f1f1f;
+}
+
+.home:hover {
+    background-color: #323131;
+    width: 44px;
+    height: 7vh;
+    border-radius: 27px;
+}
+
+.center {
+    gap: 10px;
+}
+
+.btn {
+    width: 105px;
+    height: 7vh;
+    border-radius: 27px;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+
+.signup {
+    background-color: #000000;
+    color: #b3b3b3;
+}
+
+.login {
+    background-color: white;
+    color: #000000;
+}
+
+
+.signup:hover {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.login:hover {
+    background-color: rgb(225, 225, 225);
+    width: 108px;
+    height: 7.5vh;
+}
+
+.plus {
+    background-image: url(plus.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    /* filter: invert(1); */
+    cursor: pointer;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: #121212;
+}
+
+.plus:hover {
+    background-color: #1f1f1f;
+}
+
+.Library img {
+    height: 30px;
+    width: 30px;
+}
+
+
+.Library {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.Library img:hover {
+    fill: white;
+}
+
+.top_left {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-bottom: 22px;
+}
+
+.Library span {
+    font-weight: bold;
+    color: #b3b3b3;
+}
+
+.Library span:hover {
+    color: white;
+}
+
+.small_box {
+    flex-direction: column;
+    gap: 15px;
+    background-color: #1f1f1f;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 15px;
+    border-radius: 10px;
+    /* height: 120px; */
+    margin-bottom: 25px;
+    /* width: 31vw; */
+}
+
+.playlist_btn {
+    width: 11vw;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    /* position:initial; */
+
+}
+
+.playlist_btn:hover {
+    width: 11.2vw;
+    border-radius: 22px;
+    height: 37px;
+}
+
+.small_box .first {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.small_box .second {
+    font-size: 13px;
+}
+
+.mid_left {
+    height: 240px;
+    overflow-y: auto;
+}
+
+.mid_left::-webkit-scrollbar {
+    color: #1f1f1f;
+}
+
+.bottom_left {
+    /* text-decoration: none; */
+    /* list-style: none; */
+    margin: 20px;
+    margin-bottom: 0;
+    /* padding: 15px; */
+    padding-top: 20px;
+
+}
+
+.bottom_left .list {
+    list-style: none;
+    /* margin-top: 25px; */
+    margin-bottom: 12px;
+    gap: 15px;
+    font-size: 11px;
+    cursor: pointer;
+    /* justify-content: center; */
+    color: #b3b3b3;
+}
+
+.bottom_left .last {
+    color: #ffffff;
+    /* font-weight: bolder; */
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.bottom_left .last:hover {
+    text-decoration: underline;
+}
+
+.bottom_left .eng {
+    border: 1px solid grey;
+    background-color: #1f1f1f;
+    height: 30px;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+
+}
+
+.bottom_left .eng:hover {
+    border: 1px solid white;
+    background-color: #1f1f1f;
+    height: 32px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+
+
+}
+
+.bottom_page {
+    margin: 1vh;
+    height: 6vh;
+    padding: 15px;
+    background: linear-gradient(to right, #af2a97, #529bf5);
+    font-size: 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#right>* {
+    padding: 20px;
+}
+
+.bottom_page .btn {
+    color: #000000;
+    width: 170px;
+    font-weight: 600;
+}
+
+#right .artists .top {
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#right .artists .top:hover {
+
+    text-decoration: underline;
+}
+
+#right .artist-card {
+    padding: 18px;
+    height: 27vh;
+    width: 12vw;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    position: relative;
+    /* justify-content: center; */
+    cursor: pointer;
+}
+
+#right .artist-card img {
+    border-radius: 75px;
+    margin-bottom: 10px;
+    /* top: 20px; */
+}
+
+#right .artist-card .play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: #1ed760;
+    border-radius: 55px;
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    /* visibility: hidden; */
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+#right .artist-card h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#right .artist-card h2:hover{
+    text-decoration: underline;
+}
+
+#right .artist-card p {
+    font-size: 12px;
+    color: #b3b3b3;
+
+}
+
+#right .artist-card:hover {
+    background-color: #323131;
+
+
+}
+
+#right .artist-card .play-button:hover {
+    opacity: 1;
+}
+
+#right .playlist .top {
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#right .playlist .top:hover {
+
+    text-decoration: underline;
+}
+
+#right .playlist-card {
+    padding: 18px;
+    height: 30vh;
+    width: 11vw;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#right .playlist-card img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* top: 20px; */
+}
+
+#right .playlist-card .play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: #1ed760;
+    border-radius: 55px;
+    position: absolute;
+    top: 110px;
+    right: 25px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+#right .playlist-card h2 {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+#right .playlist-card h2:hover{
+    text-decoration: underline;
+}
+
+#right .playlist-card p {
+    font-size: 12px;
+    color: #b3b3b3;
+
+}
+
+#right .playlist-card p:hover{
+    text-decoration: underline;
+}
+
+#right .playlist-card .play-button:hover {
+    opacity: 1;
+}
+#right .playlist-card:hover {
+    background-color: #323131;
+
+
+}

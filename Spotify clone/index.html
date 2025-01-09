@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="script.js"></script>
+    <!-- <link rel="stylesheet" href="favicon.ico"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="navbar flex bg-black">
+            <img src="logo.svg" alt="logo" class="invert logo">
+            <div class="center flex item-center">
+                <button class="home"></button>
+                <input type="text" class="search" placeholder=" What do you want to play?">
+
+            </div>
+            <div class="buttons">
+                <button class="signup btn">
+                    Sign up
+                </button>
+                <button class="login btn">
+                    Log in
+                </button>
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="container flex">
+        <div class="left border">
+            <div class="top_left flex">
+                <div class="Library flex">
+                    <img src="lib.svg" alt="">
+                    <span>Your Library</span>
+
+                </div>
+
+                <button class="plus">
+
+                </button>
+            </div>
+
+            <div class="mid_left">
+                <div class="small_box flex">
+                    <span class="first">Create your first playlist</span>
+                    <span class="second">It's easy, we'll help you</span>
+                    <button class="playlist_btn">
+                        Create playlist
+                    </button>
+                </div>
+                <div class="small_box flex">
+                    <span class="first">Let's find some podcasts to follow</span>
+                    <span class="second">We'll keep you updated on new episodes</span>
+                    <button class="playlist_btn">
+                        Browse podcasts
+                    </button>   
+                </div>
+            </div>
+
+            <div class="bottom_left">
+                <ul class="flex list ">
+                    <li>Legal</li>
+                    <li>Saftey&PrivacyCenter</li>
+                    <li>PrivacyPolicy</li>
+                    <li>Cookies</li>
+                </ul>
+                <ul class="flex list ">
+                    <li>AboutAds</li>
+                    <li>Accessibility</li>
+                </ul>
+                <ul class="flex list last">
+                    <li>Cookies</li>
+                </ul>
+
+                <button class="eng btn flex">
+                    <img src="globe.svg" alt="" height="15px" width="15px">
+                    English
+                </button>
+
+            </div>
+        </div>
+        <div  id = "right" class=" border">
+            <div class="artists">
+                <div class="top">
+                    Popular artists
+                </div>
+                <div class="cards flex">
+
+                    <div class="artist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/artist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>Pritam</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/artist2.jpeg" alt="" height="120px" width="120px">
+                        <h2>Sachin-Jigar</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/artist3.jpeg" alt="" height="120px" width="120px">
+                        <h2>A.R. Rahman</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/artist4.jpeg" alt="" height="120px" width="120px">
+                        <h2>Arijit Singh</h2>
+                        <p>Artist</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/artist5.jpeg" alt="" height="120px" width="120px">
+                        <h2>Vishal-Shekhar</h2>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="playlist">
+                <div class="top">
+                    Popular albums and singles
+                </div>
+                <div class="cards flex">
+
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist2.jpeg" alt="" height="120px" width="120px">
+                        <h2>Patandar</h2>
+                        <p>Arjan Dhillon, Mxrci</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist3.jpeg" alt="" height="120px" width="120px">
+                        <h2>Aashiqui 2</h2>
+                        <p>Mithoon, Ankit Tiwari, Jeet Ganguli</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist4.jpeg" alt="" height="120px" width="120px">
+                        <h2>Jo Tum Mere Ho</h2>
+                        <p>Anuv Jain</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist5.jpeg" alt="" height="120px" width="120px">
+                        <h2>Making Memories</h2>
+                        <p>Karan Aujla, Ikky</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="top">
+                    Popular radio
+                </div>
+                <div class="cards flex">
+
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist6.jpeg" alt="" height="120px" width="120px">
+                        <p>With Sachin-Jigar, Vishal-Shekhar,Am...</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist7.jpeg" alt="" height="120px" width="120px">
+                        <p>With Karan Aujla, Shubh, AP Dhillon...</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist8.jpeg" alt="" height="120px" width="120px">
+                        <p>With Uttam Singh, Abhijeet, Lata...</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist9.jpeg" alt="" height="120px" width="120px">
+                        <p>With Pritam, Mohit Chauhan, Shaan an...</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist10.jpeg" alt="" height="120px" width="120px">
+                        <p>With A.R. Rahman, Vishal Vishal-Shekhar, Ati...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="top">
+                    Featured Charts
+                </div>
+                <div class="cards flex">
+
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="top">
+                    2024 Wrapped
+                </div>
+                <div class="cards flex">
+
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                    <div class="playlist-card">
+                        <div class="play-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25"
+                                aria-hidden="true">
+                                <path
+                                    d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <img src="Assets/playlist1.jpeg" alt="" height="120px" width="120px">
+                        <h2>GLORY</h2>
+                        <p>Yo Yo Honey Singh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer class="bottom_page flex">
+        <div>
+
+            <div>
+                Preview of Spotify
+            </div>
+
+            <div>
+                Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.
+            </div>
+        </div>
+
+        <button class="btn">
+            Sign up for free
+        </button>
+    </footer>
+</body>
+
+</html>
